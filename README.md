@@ -1,9 +1,9 @@
 # AsyncImageView
 Asynchronous image loading using imageView extension
 
-- No third party framwork or lib used, However we can use some for better results like SDWebImageSwiftUI
+- No third party framework or lib used, however we can use some of existing libraries/framework for better results. One good library that I know of is SDWebImageSwiftUI
 
-- I have used MVVM and Coordinator pattern for easy navigation flow and testable. Alternative can be MVC.
+- I have used MVVM and Coordinator pattern for easy navigation flow and to make the code testable. Alternatively can be MVC.
 
 ## HLD
 
@@ -11,4 +11,4 @@ Asynchronous image loading using imageView extension
 
 ## Note
 
-- Home Screen Image URL is configrable and you can configure that in Constants.swift - kImageURL
+- Home Screen Image URL is configurable and you can configure that in Constants.swift - kImageURL
