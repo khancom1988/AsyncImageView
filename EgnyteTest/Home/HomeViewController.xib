@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="EgnyteTest" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="kid-0T-aHv" id="8Ha-8a-azt"/>
+                <outlet property="userListButton" destination="qmm-Wi-jhp" id="uL8-FN-2Vr"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Mcb-oO-kqT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kid-0T-aHv">
+                    <rect key="frame" x="107" y="348" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Pg9-IJ-H9d"/>
+                        <constraint firstAttribute="width" constant="200" id="m9H-Jq-pcG"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmm-Wi-jhp">
+                    <rect key="frame" x="112" y="792" width="190" height="30"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="    Multiple Image Handler    "/>
+                    <connections>
+                        <action selector="showUserList:" destination="-1" eventType="touchUpInside" id="xUV-vx-2go"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qmm-Wi-jhp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MVP-JQ-i0W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qmm-Wi-jhp" secondAttribute="bottom" constant="40" id="YWX-MW-wHI"/>
+                <constraint firstItem="kid-0T-aHv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="e5U-Eg-x8Z"/>
+                <constraint firstItem="kid-0T-aHv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="s3m-dt-eYS"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="140"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
